@@ -1,1 +1,6 @@
 streamlit
+logging
+typing
+requests
+streamlit_chat
+cloudinary
