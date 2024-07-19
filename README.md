@@ -1,8 +1,25 @@
-# :earth_americas: GDP dashboard template
+# :We are Team ClearOUT, and we're excited to introduce our AI chat assistant designed to help you dispose of and recycle items you no longer need.
+Meet Our Team: Muhammad Saqlain, Luigi Palumbo, Pere Pasamonte, Rafiea Ashraf, Saksham Gupta, and Ubaid Ur Rehman. We met specifically for this hackathon, and all the work was completed in just a couple of days without any prior preparation.
 
-A simple Streamlit app showing the GDP of different countries in the world.
+# :What is ClearOUT?
+ClearOUT is a Recycling/Reuse AI Assistant. It helps people be more sustainable by reusing, donating, or recycling their items. Users can express interest in specific items or upload pictures of things they no longer want. The AI then matches these items with people who need them but cannot afford to buy them, or finds suitable recycling options. It can also function as a marketplace, allowing people to express their needs and find suitable items from a list of posted items.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gdp-dashboard-template.streamlit.app/)
+# :Technologies Used
+- LangFlow: Created custom elements like image recognition and a DuckDuckGo search tool for web searches without an API key.
+- AI/ML API
+- GPT-4 with vision capability
+- Streamlit: For the UI interface
+- Railway: For app deployment
+- Qdrant: Vector database (integration in progress)
+- DataStax: For prototyping
+- DuckDuckGo: For web searches without an API key
+
+# :Here is our LangnoFlow Hackathon Team's Page
+_https://lablab.ai/event/langflow-hackathon/langnochain/clearout_
+
+Watch Pitch here
+[![ClearOUT Presentation Pitch](https://img.youtube.com/vi/wP7raCp1_mI/0.jpg)](https://www.youtube.com/watch?v=wP7raCp1_mI)
+
 
 ### How to run it on your own machine
 
