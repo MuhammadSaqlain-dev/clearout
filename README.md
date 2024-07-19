@@ -24,7 +24,8 @@ _https://lablab.ai/event/langflow-hackathon/langnochain/clearout_
 [![ClearOUT Presentation Pitch](https://img.youtube.com/vi/wP7raCp1_mI/0.jpg)](https://www.youtube.com/watch?v=wP7raCp1_mI)
 
 
-<iframe src="[https://storage.googleapis.com/lablab-static-eu/presentations/submissions/clylqq9vj00002v6ucuth5s3f/clylqq9vj00002v6ucuth5s3f-1721074090562_ge5cq0w1v.pdf]" width="100%" height="600px"></iframe>
+Presentation Pitch
+[here](/ppt/Green%20and%20White%20Illustrative%20How%20To%20Recycle%20Waste%20Presentation.pdf)
 
 
 ### How to run it on your own machine
