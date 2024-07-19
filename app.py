@@ -19,7 +19,7 @@ cloudinary.config(
 )
 
 BASE_API_URL = "https://musaqlain-langflow-hackathon-clearout.hf.space/api/v1/run"
-FLOW_ID = "a433b9be-25cb-488c-bf2c-52ea934fc617"
+FLOW_ID = "0b93e3c9-b7d0-4769-bd56-e603ec03cc69"
 BASE_AVATAR_URL = (
     "https://raw.githubusercontent.com/garystafford-aws/static-assets/main/static"
 )
@@ -125,7 +125,7 @@ def generate_response(prompt):
     print ("uploaded_img_url",uploaded_img_url)
     # Dynamically create TWEAKS dictionary
     tweaks = {
-        "ChatInput-Qj1K4": {
+        "ChatInput-PKbEo": {
             "input_value": prompt,
             "sender": "User",
             "sender_name": "User",
@@ -135,7 +135,7 @@ def generate_response(prompt):
     }
 
     if st.session_state.uploaded_img_url:
-        tweaks["FileUploadComponent-MMf4w"] = {
+        tweaks["FileUploadComponent-DYGG2"] = {
             "AIMLApiKey": "8759623ce0574e56b454933d4e4ee4aa",
             "MaxTokens": 300,
             "model": "gpt-4o",
