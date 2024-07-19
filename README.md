@@ -1,4 +1,7 @@
-# :We are Team ClearOUT, and we're excited to introduce our AI chat assistant designed to help you dispose of and recycle items you no longer need.
+# 𝐂𝐥𝐞𝐚𝐫𝐎𝐔𝐓: 𝐀 𝐑𝐞𝐜𝐲𝐜𝐥𝐢𝐧𝐠/𝐑𝐞𝐮𝐬𝐞 𝐀𝐈 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 ♻️
+
+We are Team ClearOUT, and we're excited to introduce our AI chat assistant designed to help you dispose of and recycle items you no longer need.
+
 Meet Our Team: Muhammad Saqlain, Luigi Palumbo, Pere Pasamonte, Rafiea Ashraf, Saksham Gupta, and Ubaid Ur Rehman. We met specifically for this hackathon, and all the work was completed in just a couple of days without any prior preparation.
 
 # :What is ClearOUT?
@@ -17,7 +20,7 @@ ClearOUT is a Recycling/Reuse AI Assistant. It helps people be more sustainable 
 # :Here is our LangnoFlow Hackathon Team's Page
 _https://lablab.ai/event/langflow-hackathon/langnochain/clearout_
 
-Watch Pitch here
+
 [![ClearOUT Presentation Pitch](https://img.youtube.com/vi/wP7raCp1_mI/0.jpg)](https://www.youtube.com/watch?v=wP7raCp1_mI)
 
 
