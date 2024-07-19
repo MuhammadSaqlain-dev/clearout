@@ -21,7 +21,7 @@ ClearOUT is a Recycling/Reuse AI Assistant. It helps people be more sustainable 
 _https://lablab.ai/event/langflow-hackathon/langnochain/clearout_
 
 
-[![ClearOUT Presentation Pitch](https://img.youtube.com/vi/wP7raCp1_mI/0.jpg)](https://www.youtube.com/watch?v=wP7raCp1_mI)
+[![Watch the video](https://img.youtube.com/vi/wP7raCp1_mI/0.jpg)](https://www.youtube.com/watch?v=wP7raCp1_mI)
 
 
 Presentation Pitch
