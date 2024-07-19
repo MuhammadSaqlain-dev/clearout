@@ -4,10 +4,10 @@ We are Team ClearOUT, and we're excited to introduce our AI chat assistant desig
 
 Meet Our Team: Muhammad Saqlain, Luigi Palumbo, Pere Pasamonte, Rafiea Ashraf, Saksham Gupta, and Ubaid Ur Rehman. We met specifically for this hackathon, and all the work was completed in just a couple of days without any prior preparation.
 
-# :What is ClearOUT?
+# What is ClearOUT?
 ClearOUT is a Recycling/Reuse AI Assistant. It helps people be more sustainable by reusing, donating, or recycling their items. Users can express interest in specific items or upload pictures of things they no longer want. The AI then matches these items with people who need them but cannot afford to buy them, or finds suitable recycling options. It can also function as a marketplace, allowing people to express their needs and find suitable items from a list of posted items.
 
-# :Technologies Used
+# Technologies Used
 - LangFlow: Created custom elements like image recognition and a DuckDuckGo search tool for web searches without an API key.
 - AI/ML API
 - GPT-4 with vision capability
@@ -17,11 +17,14 @@ ClearOUT is a Recycling/Reuse AI Assistant. It helps people be more sustainable 
 - DataStax: For prototyping
 - DuckDuckGo: For web searches without an API key
 
-# :Here is our LangnoFlow Hackathon Team's Page
+# Here is our LangnoFlow Hackathon Team's Page
 _https://lablab.ai/event/langflow-hackathon/langnochain/clearout_
 
 
 [![ClearOUT Presentation Pitch](https://img.youtube.com/vi/wP7raCp1_mI/0.jpg)](https://www.youtube.com/watch?v=wP7raCp1_mI)
+
+
+<iframe src="[https://yourdomain.com/path/to/your/file.pdf](https://storage.googleapis.com/lablab-static-eu/presentations/submissions/clylqq9vj00002v6ucuth5s3f/clylqq9vj00002v6ucuth5s3f-1721074090562_ge5cq0w1v.pdf)" width="100%" height="600px"></iframe>
 
 
 ### How to run it on your own machine
