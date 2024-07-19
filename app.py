@@ -136,7 +136,7 @@ def generate_response(prompt):
 
     if st.session_state.uploaded_img_url:
         tweaks["FileUploadComponent-MMf4w"] = {
-            "AIMLApiKey": "1fd6b15558b241f5822130237ea84dba",
+            "AIMLApiKey": "8759623ce0574e56b454933d4e4ee4aa",
             "MaxTokens": 300,
             "model": "gpt-4o",
             "prompt": "Name the items in the image",
