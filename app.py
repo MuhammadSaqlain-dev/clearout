@@ -19,7 +19,7 @@ cloudinary.config(
 )
 
 BASE_API_URL = "https://musaqlain-langflow-hackathon-clearout.hf.space/api/v1/run"
-FLOW_ID = "3e615e54-b310-43a5-a2d0-e9b671b0e6da"
+FLOW_ID = "0b93e3c9-b7d0-4769-bd56-e603ec03cc69"
 BASE_AVATAR_URL = (
     "https://raw.githubusercontent.com/garystafford-aws/static-assets/main/static"
 )
@@ -124,7 +124,7 @@ def generate_response(prompt):
     
     # Dynamically create TWEAKS dictionary
     tweaks = {
-        "ChatInput-irjw6": {
+        "ChatInput-PKbEo": {
             "input_value": prompt,
             "sender": "User",
             "sender_name": "User",
@@ -134,8 +134,8 @@ def generate_response(prompt):
     }
 
     if st.session_state.uploaded_img_url:
-        tweaks["FileUploadComponent-Xsq0d"] = {
-            "AIMLApiKey": "1fd6b15558b241f5822130237ea84dba",
+        tweaks["FileUploadComponent-DYGG2"] = {
+            "AIMLApiKey": "8759623ce0574e56b454933d4e4ee4aa",
             "MaxTokens": 300,
             "model": "gpt-4o",
             "prompt": "Name the items in the image",
