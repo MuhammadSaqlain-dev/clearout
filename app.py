@@ -122,7 +122,6 @@ def generate_response(prompt):
     logging.info(f"question: {prompt}")
     inputs = {"question": prompt}
     
-    print ("uploaded_img_url",uploaded_img_url)
     # Dynamically create TWEAKS dictionary
     tweaks = {
         "ChatInput-irjw6": {

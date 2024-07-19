@@ -2,4 +2,3 @@ requests
 streamlit
 streamlit-chat
 cloudinary
-streamlit
