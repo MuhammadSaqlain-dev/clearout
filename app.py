@@ -75,14 +75,14 @@ def main():
         # Display user message in chat message container
         with st.chat_message(
             "user",
-            avatar=f"./static/ai_icon.png",
+            avatar=f"./static/user_icon.png",
         ):
             st.write(prompt)
 
         # Display assistant response in chat message container
         with st.chat_message(
             "assistant",
-            avatar=f"{BASE_AVATAR_URL}/bartender-64px.png",
+            avatar=f"./static/ai_icon.png",
         ):
             message_placeholder = st.empty()
             with st.spinner(text="Thinking..."):
@@ -93,7 +93,7 @@ def main():
             {
                 "role": "assistant",
                 "content": assistant_response,
-                "avatar": f"{BASE_AVATAR_URL}/bartender-64px.png",
+                "avatar": f"./static/ai_icon.png",
             }
         )
     
