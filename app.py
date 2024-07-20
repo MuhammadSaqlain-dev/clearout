@@ -8,18 +8,31 @@ from streamlit_chat import message
 import cloudinary
 import cloudinary.uploader
 
+st.set_page_config(
+    page_title="ClearOUT - 𝐑𝐞𝐜𝐲𝐜𝐥𝐢𝐧𝐠/𝐑𝐞𝐮𝐬𝐞 𝐀𝐈 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 ♻️ 🌎🌱",
+    page_icon="♻️",
+    layout="wide",
+)
+
+def load_css():
+    with open("static/styles.css", "r") as f:
+        css = f"<style>{f.read()}</style>"
+        st.markdown(css, unsafe_allow_html=True)
+
 log_format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 logging.basicConfig(format=log_format, stream=sys.stdout, level=logging.INFO)
 
+load_css()
+
 # Cloudinary configuration
 cloudinary.config(
-  cloud_name="darkdegwd", 
-  api_key="345662779321261", 
-  api_secret="MYv7ImXfjyc24DvTbMJS_2IISL0"
+    cloud_name = "darkdegwd", 
+    api_key = "345662779321261", 
+    api_secret = "MYv7ImXfjyc24DvTbMJS_2IISL0"
 )
 
-BASE_API_URL = "https://musaqlain-langflow-hackathon-clearout.hf.space/api/v1/run"
-FLOW_ID = "0b93e3c9-b7d0-4769-bd56-e603ec03cc69"
+BASE_API_URL  =  "https://musaqlain-langflow-hackathon-clearout.hf.space/api/v1/run"
+FLOW_ID  =  "0b93e3c9-b7d0-4769-bd56-e603ec03cc69"
 BASE_AVATAR_URL = (
     "https://raw.githubusercontent.com/garystafford-aws/static-assets/main/static"
 )
@@ -37,9 +50,7 @@ def upload_image_to_cloudinary(image_file):
 
 
 def main():
-    st.set_page_config(page_title="Clearout")
-
-    st.markdown("##### Welcome to the ClearOut")
+    st.markdown("##### 𝐂𝐥𝐞𝐚𝐫𝐎𝐔𝐓: 𝐑𝐞𝐜𝐲𝐜𝐥𝐢𝐧𝐠/𝐑𝐞𝐮𝐬𝐞 𝐀𝐈 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 ♻️ 🌎🌱")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -58,13 +69,13 @@ def main():
             {
                 "role": "user",
                 "content": prompt,
-                "avatar": f"{BASE_AVATAR_URL}/people-64px.png",
+                "avatar": f"./static/user_icon.png",
             }
         )
         # Display user message in chat message container
         with st.chat_message(
             "user",
-            avatar=f"{BASE_AVATAR_URL}/people-64px.png",
+            avatar=f"./static/ai_icon.png",
         ):
             st.write(prompt)
 
@@ -128,29 +139,24 @@ def generate_response(prompt):
             "input_value": prompt,
             "sender": "User",
             "sender_name": "User",
-            "session_id": "",
             "store_message": True
         },
     }
 
     if st.session_state.uploaded_img_url:
         tweaks["FileUploadComponent-DYGG2"] = {
-            "AIMLApiKey": "8759623ce0574e56b454933d4e4ee4aa",
-            "MaxTokens": 300,
-            "model": "gpt-4o",
-            "prompt": "Name the items in the image",
+            "prompt": "Describe the item in this image",
             "uploaded_file": st.session_state.uploaded_img_url
-        }
+        }    
 
     response = run_flow(inputs, flow_id=FLOW_ID, tweaks=tweaks)
-
+    
     try:
         logging.info(f"answer: {response['outputs'][0]['outputs'][0]['results']['message']['data']['text']}")
         return response['outputs'][0]['outputs'][0]['results']['message']['data']['text']
     except Exception as exc:
         logging.error(f"error: {response}")
         return "Sorry, there was a problem finding an answer for you."
-
 
 if __name__ == "__main__":
     main()

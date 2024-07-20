@@ -1,14 +1,15 @@
-.chat-row {
+.chat-row, .eeusbqq4 {
     display: flex;
     margin: 5px;
     width: 100%;
+    background-color: transparent;
 }
 
 .row-reverse {
     flex-direction: row-reverse;
 }
 
-.chat-bubble {
+.chat-bubble, .eeusbqq3 {
     font-family: "Source Sans Pro", sans-serif, "Segoe UI", "Roboto", sans-serif;
     border: 1px solid transparent;
     padding: 5px 10px;
@@ -16,17 +17,18 @@
     max-width: 70%;
 }
 
-.ai-bubble {
+.ai-bubble, [aria-label="Chat message from assistant"] {
     background: rgb(240, 242, 246);
     border-radius: 10px;
 }
 
-.human-bubble {
+/* aria-label="Chat message from user" */
+.human-bubble, [aria-label="Chat message from user"] {
     background: linear-gradient(135deg, rgb(0, 178, 255) 0%, rgb(0, 106, 255) 100%); 
     color: white;
     border-radius: 20px;
 }
 
-.chat-icon {
+.chat-icon, .eeusbqq0 {
     border-radius: 5px;
 }
